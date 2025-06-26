@@ -579,92 +579,113 @@ nav .fa-solid{
     display: none;
 }
 
-/* 🔥 For Vivo Y11 (360px width) */
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 400px) 
-  and (orientation: portrait) {
-
-    /* 🔹 Navbar */
-    nav {
-        padding: 10px;
-        width: 100%;
-    }
-    nav ul {
-        width: 130px;
-        height: 270px;
-    }
-    nav ul li {
-        margin: 10px 0;
-    }
-    .titlename {
-        margin-right: 10px;
-    }
-
-    /* 🔹 Header */
-    #header {
-        background-image:url(Assets/mypic3ps.png);
-        background-size: 60%;
-        background-attachment: fixed;
-        height: 140vh;
-    }
-    .home-intro-s {
-        margin-top: 100px;
-    }
-    #intro {
-        font-size: 18px;
-    }
-    #name {
-        font-size: 20px;
-    }
-    #profession, #developer-type {
-        font-size: 18px;
-    }
-    .abt-hm {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    /* 🔹 About Section */
-    .about-col1 img {
-        width: 200px;
-    }
-    #about-col2 p {
-        font-size: 13px;
-    }
-    .sub-title {
-        font-size: 24px;
-    }
-
-    /* 🔹 Projects */
-    .project_list {
-        grid-template-columns: 1fr;
-    }
-    .project_list div {
-        padding: 10px;
-    }
-
-    /* 🔹 Skills Section */
-    .services_list {
-        grid-template-columns: 1fr;
-    }
-    .services_list div {
-        padding: 10px;
-    }
-
-    /* 🔹 Contact */
-    .contact-top form {
-        padding: 15px;
-    }
-    .input-name, .input-no, .input-email, .input-message {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    /* 🔹 WhatsApp Icon */
-    .whatsapp-icon a img {
-        width: 45px;
-    }
+  and (orientation: portrait){
+        /*------------ navbar----------- */
+        nav{
+            display: flex;
+            width: 500px;
+            padding: 10px 0px 5px 70px;
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 27px;
+            margin-top: 10px;
+        }
+        nav ul{
+            background: #919090;
+            display: flex;
+            flex-wrap: wrap;
+            position: fixed;
+            margin-top: 30px;
+            top: 0;
+            right: -200px;
+            width: 150px;
+            height: 350px;
+            border-radius: 10px;
+            padding-top: 50px;
+            transition: right 0.5s;
+            z-index: 1;
+        }
+        nav ul li{
+            display: block;
+            margin: 5px 25px 10px 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            cursor: pointer;
+        }
+        nav ul .fa-solid:hover{
+            color: red;
+        }
+        /*--------- home ----------*/
+        #header{
+            background-image:url(Assets/mypic3ps.png);
+            background-size: 60%;
+            background-attachment: fixed;
+            height: 140vh;
+         }
+        .home-intro-s{
+            margin-top: -100px;
+        }
+        #home_text{
+            font-size: 18px;
+            margin-top: 230px;
+         }
+        #home_text p{
+            color:cornsilk;
+        }
+         #intro{
+            font-size: 30px;
+         }
+         #name{
+            font-size: 22px;
+         }
+         #profession{
+            font-size: 23px;
+         }
+         #developer-type{
+            font-size: 25px;
+            margin-bottom: 100px;
+         }
+        .abt-hm{
+            font-size: 17px;
+            width: 105%; 
+         }
+         /*----------- About----------- */
+         .row {
+            display: block;
+            }
+        #about-col2{
+            margin-top: 20px;
+            }
+            /*---------- Services----------- */
+         #services{
+            padding: 20px 15px;
+        }
+        #about_section{
+            height: 145vh;
+        }
+        #projects{
+            margin-top: 130px;
+        }
+        .project_list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .more-content{
+            display:contents;
+        }
+        .see-more-btn{
+            display: none;
+        }
+        .whatsapp-icon a img{
+            width: 50px;
+        }        
 }
 
 #msg{
