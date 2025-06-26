@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813d18456d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <!--------------------------Home page---------------------------------->
+        <div class="container">       
+<!-----------------------------------NavBar section ------------------------------------------->
+            <nav>
+                <div class="titlename">
+                    <h1 class="nametext"><span class="henamest">S.M</span><span class="henamed">anjunath.</span></h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about-col2" onclick="closemenu()">About</a></li>
+                    <li><a href="#projects" onclick="closemenu()">Pojects</a></li>
+                    <li><a href="#services" onclick="closemenu()">Key Skills</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contacts</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <!---------------------------Home intro Section----------------------------->
+        <div class="home-intro-s">
+            <div id="home_text">
+                <p id="intro"> Hello, It's Me </p>
+                <p id="name">Siddappa Gari Manjunath </p>
+                <p id="profession">And I'm a &nbsp;<span id="developer-type"> </span> </p> 
+                <p style="margin-top: 20px;  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px  1px 0 black, 1px  1px 0 black;" class="abt-hm">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I’m a passionate Full-Stack Developer skilled in front-end technologies like HTML, CSS, JavaScript, and React, along with back-end tools such as Python and SQL. I enjoy building responsive and user-friendly web applications. Most of my  experience comes from academic, institute projects and my personal work,  where I’ve learned to take ideas from concept to deployment. I’m eager to contribute, grow, and collaborate on real-world projects. With a strong foundation and a continuous learning mindset, I’m ready to take on new challenges. Let’s build something great together! </p>
+            </div>
+
+            <!------------social meadia Icons adding ----------------->
+
+                <div class="media_icons">
+                    <a href="https://www.linkedin.com/in/manjunath-s-90a92b312/" class="linkedin_icon">
+                        <img src="Assets/linkedin222.png" width="65px" height="65px">
+                    </a>
+                    <a href="https://github.com/Manjunath12668" class="github_icon">
+                        <img src="Assets/github png.png" width="65px" height="65px">   
+                    </a><br>
+                    <a href="#" class="resume_icon">Download Resume </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------------About section----------------------------------------------------->
+
+    <div id="about_section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Assets/mypic1.png" >
+                </div>
+
+                <div id="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is S Manjunath. I am from Andhra Pradesh and currently staying in Bangalore. I recently graduated with a BCom in Computer Applications from SBVV College, Hindupur, affiliated with Sri Krishna Devaraya University, Anantapur. With comprehensive knowledge in computer applications, I am a motivated Python Full Stack Web Developer skilled in both front-end and back-end development. <br> <p style="margin-top: 10px;">I am proficient in Python, SQL, HTML, CSS, JavaScript, and React, and I am passionate about creating user-friendly, effective web applications. My strengths are in solving complex technical challenges, learning quickly, and working well in teams. I am committed to continual learning to enhance my technical skills. I am eager to contribute to dynamic development teams and build innovative software solutions that drive organizational success. </p></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages :</span> <br> HTML, CSS, JavaScript, Python</li>
+                            <li><span>Frameworks :</span> <br> React js, Django, Flask </li>
+                            <li><span>Tools :</span><br>  Git, MySQL, VS Code</li>
+                            <li><span>Mocrosoft Office :</span> <br> Ms word, Ms Excle, Ms PowerPoint</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span> SBVV Degree College (SK University)</span> <br> Bachelore's Degree in Commerce (Computer Applications) <br>2020-2023___ 68%</li>
+                            <li><span>Murali Junior College Rolla</span> <br>Intermediate(Commerce, Economics, Civics) <br> 2018-2020___ 72%</li>
+                            <li><span>Govt High School Rolla</span> <br> SSC(Secondary School Certificate) / 10th <br> 2017-2018___ 72%  </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Certifications">
+                        <ul>
+                            <li><span>cer1 </span> <br> link </li>
+                            <li><span> cer2</span> <br>link </li>
+                            <li><span>cer3</span> <br>link</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <!-- ---------------------------------Projects------------------------------------------ -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title tab" >My Projects</h1>
+            <div class="project_list">
+                <div class="budget-zone-website">
+                    <h4>Project-1</h4>
+                    <h3>Front-End Design</h3>
+                    <h5>The Budget Zone Restaurant Website </h5>
+                    <a href="https://budget-zone-website.vercel.app/">View Project</a>
+                </div>
+
+                <div class="library-web">
+                    <h4>Project-2</h4>
+                    <h3>Library Database </h3>
+                    <h5>Library Management System - <a href="https://drive.google.com/file/d/1RFS-Dth5A4Nwr7tDxrk2hGyqe0MpGxIy/view">Demo Video</a></h5>
+                    <a href="https://github.com/Manjunath12668/Library-Database-System/tree/main">View Project</a>
+                </div>
+
+                <div class="amazon-home">
+                    <h4>Project-3</h4>
+                    <h3>Front-End Design </h3>
+                    <h5>Amazon Home Page</h5>
+                    <a href="https://amazon-home-page-xwev.vercel.app/#">View Project</a>
+                </div>
+
+                <div class="calculator-webapp">
+                    <h4>Project -4</h4>
+                    <h3> Calculator Design</h3>
+                    <h5>Calculator Web Application</h5>
+                    <a href="https://calculator-teal-zeta-69.vercel.app/">View Project</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------Services Section--------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title tab" >My Key Skills</h1>
+            <div class="services_list">
+                <div>
+                    <img src="Assets/Front-end-logo.png" width="80px" style="margin-bottom: 15px;" >
+                    <h2>Key Front-End Skills</h2>
+                    <h3><img src="Assets/HTML5_logo.png"><span>HTML5 (HyperText Markup Language)</span> </h3>
+                    <ul style="list-style-type: square ;">
+                        <li>Semantic and accessible markup (HTML5)</li>
+                        <li>SEO-friendly and responsive structure</li>
+                        <li>Forms and media integration</li>
+                    </ul>
+                    <h3><img src="Assets/CSS3_logo.png" style="width: 7%;"><span>CSS3 (Cascading Style Sheets)</span> </h3>
+                    <ul style="list-style-type: square ;">
+                        <li>Modern layouts using Flexbox and Grid</li>
+                        <li>Responsive design with media queries</li>
+                        <li>CSS animations, transitions, and effects</li>
+                        <li>Utility-first styling (Tailwind CSS)</li>
+                    </ul>
+
+
+                    <!-- See More Button -->
+                    <button class="see-more-btn" onclick="toggleAllMore()">See More</button>
+                    <!-- Hidden -->
+                    <section class="more-content">
+                        <h3><img src="Assets/javascript-39400.png" style="width: 9%;"><span>JavaScript (ES6+)</span> </h3>
+                        <ul style="list-style-type: square ; ">
+                            <li>DOM manipulation and event handling</li>
+                            <li>REST API integration using Fetch/Axios</li>
+                            <li>ES6+ features (arrow functions, destructuring, promises)</li>
+                            <li>Form validation and client-side logic</li>
+                        </ul> 
+                        <h3><img src="Assets/Reactjs.png" style="width: 8%;"><span>React.js</span> </h3>
+                        <ul style="list-style-type: square ;">
+                            <li>Functional components and Hooks (useState, useEffect, etc.)</li>
+                            <li>Props, state management, and reusable components</li>
+                            <li>Conditional rendering and dynamic lists</li>
+                            <li>React Router for page navigation</li>
+                            <li>Context API / Redux (if applicable) for state management</li>
+                        </ul> 
+                    </section>
+                </div>
+                <div>
+                    <img src="Assets/My SQL.png"  width="80px" style="margin-bottom: 15px; margin-top: 10px;">
+                    <h2>MY SQL</h2>
+                    <ul style="list-style-type: square ;">
+                        <li> Writing SQL queries to retrieve, insert, update, and delete data</li>
+                        <li> Designing and creating relational database schemas</li>
+                        <li> Using JOIN, GROUP BY, HAVING, and subqueries for advanced data retrieval</li>
+                        <li> Implementing constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL)</li>
+                        <li> Working with aggregate functions (COUNT, SUM, AVG, etc.)</li>
+                        <li> Normalization of tables to reduce data redundancy</li>
+                        <li> Indexing for performance optimization</li>
+                        <li> Creating and managing stored procedures and views (if applicable)</li>
+                    </ul>
+
+                    <!-- See More -->
+                    <button class="see-more-btn" onclick="toggleAllMore()">See More</button>
+                    <!-- Hidden content -->
+                    <section class="more-content">
+                        <ul style="list-style-type: square ;">
+                            <li> Managing user roles and permissions</li>
+                            <li> Connecting MySQL with backend languages like Python (using MySQL Connector, SQLAlchemy)</li>
+                            <li> Performing database operations in Flask/Django applications</li>
+                            <li> Exporting and importing databases (using mysqldump, .sql files)</li>
+                            <li> Using tools like MySQL Workbench and command line</li>
+                        </ul>
+                    </section>
+                    
+                </div>
+                <div>
+                    <img src="Assets/Python-logo.png" width="80px" style="margin-bottom: 15px; margin-top: 10px;">
+                    <h2>Python </h2>
+                    <!-- <h3><img src="Assets/Python-logo.png" style="width: 20%;"><span>Python</span> </h3> -->
+                    <ul style="list-style-type: square ; ">
+                        <li>Strong understanding of Python syntax and logic</li>
+                        <li>Data types, loops, conditionals, and functions</li>
+                        <li>Object-Oriented Programming (OOP)</li>
+                        <li>Exception handling and debugging</li>
+                        <li>Backend web development using Flask and Django</li>
+                        <li>Creating and consuming REST APIs</li>
+                        <li>Database operations with MySQL, SQLite</li>
+                        <li>Handling form data and user authentication in web apps</li>
+                        <li>Data analysis using Pandas and NumPy</li>
+                        <li>Writing reusable scripts and automating tasks</li>
+                        <li>Working with JSON, XML, and CSV data</li>
+                        <li>Managing virtual environments using venv or pipenv</li>
+                        <li>Using pip for package management</li>
+                        <li>Version control with Git and GitHub</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/9121643303" target="_blank">
+            <img src="Assets/WhatsApp_icon.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <!-- ----------------------contacts -------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="pow">
+                <h1 class="sub-title tab">Contact</h1>
+                <div class="contact-top">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Name" required class="input-name">
+                        <input type="text" name="Number" placeholder="Number" required maxlength="10" class="input-no"><br>
+                        <input type="email" name="Email" placeholder="Email" required class="input-email"><br>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message" required class="input-message"></textarea><br>
+                        <p id="msg"></p>
+                        <button type="submit">Submit</button>
+                        
+                    </form>
+                    
+                </div>
+                
+                <div class="contact-bottom">
+                    <p class="social-link"><a href="https://www.linkedin.com/in/manjunath-s-90a92b312/">LinkedIn</a> <a href="https://github.com/Manjunath12668"> GitHub</a></p>
+                    <p class="contact-link"><i class="fa-solid fa-paper-plane" style="color: #ff004f;"></i> Email: <a href="mailto:manjunath12668@gmail.com"> manjunath12668@gmail.com</a></p>
+                    <p class="contact-link"> <i class="fa-solid fa-phone" style="color: #ff004f;"></i> Phone: <a href="callto:9121643303">9121643303</a></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright © Manjunath S. All Rights Reserved.</p>
+
+        </div>
+    </div>
+ <script src="script.js"></script>
+</body>
+</html>

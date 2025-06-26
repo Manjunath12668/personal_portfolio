@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    height: 100vh;
+    background-image: url(Assets/mypic2.png);
+    background-size:25%;    
+    background-position:center;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment:local;
+    z-index: -5;
+     /*-------when Add photo affter open commments*/
+}
+#home_text img{
+    margin-left: 950px;
+    margin-top: -500px;
+    width:30% ;
+}
+
+
+/*---------------------writing my name in Head------------------------------- */
+
+.titlename{
+    display: inline-block;
+    margin-right: 150px;
+}
+.nametext{
+    overflow: hidden;
+    border-right: 0.15em solid #fff;
+    white-space: nowrap;
+    animation: name_typing 4s steps(30,end);
+    width: 100%;
+}
+@keyframes name_typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.henamest{
+    font-family: 'Times New Roman', Times, serif,italic;
+    color: #ff004f;
+    font-size: 40px;
+}
+.henamed{
+    font-family: 'Times New Roman', Times, serif,italic;
+    font-size: 30px;
+}
+.container{
+    padding: 20px 5%;
+    margin-top: -20px;
+}
+/*-------------------------NavSection--------------------------------- */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #2e2f2f;
+    /* height: 100px; */
+    width: 100%;
+    z-index: 5;
+    margin-left: -80px;
+    padding: 20px 20px 30px 100px;  
+
+}
+nav ul{
+    margin-left: 450px;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px 70px 0px 0px;
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;/* it was depend on after*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    background-color: #ff004f;
+    border-radius: 50px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width: 110%;
+}
+
+/*---------------------------- Home intro Section----------------------------------------------- */
+.home-intro-s{
+    margin-top: 200px;
+    height: 150vh;
+}
+ #home_text{
+    margin-top: 10%;
+    font-size: 20px;
+ }
+
+ #intro{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #name{
+    font-size: 40px;
+    margin-left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #profession{
+    margin-left: 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline-flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #developer-type{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff004f;
+    font-size: 30px;
+    position: relative;
+ }
+ .abt-hm{
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ /* --------------------------- social media icons----------------------------------- */
+
+.media_icons{
+   margin-top: 40px;
+   
+ }
+.linkedin_icon{
+    margin-right: 40px;
+  }
+
+.media_icons a img {
+    border-radius: 75%; /* Make the images circular */
+    transition: background-color 0.5s, transform 0.5s; /* Smooth transition for hover effects */
+}
+
+.linkedin_icon:hover img{
+    background-color:#ff004f; 
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    box-shadow: 0 0 2px rgb(88, 237, 237), 0 0 5px rgb(88, 237, 237), 0 0 15px rgb(88, 237, 237),
+    0 0 30px rgb(88, 237, 237), 0 0 75px rgb(88, 237, 237);
+}
+
+.github_icon:hover img {
+    background-color:#ff004f; 
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    box-shadow: 0 0 2px rgb(88, 237, 237), 0 0 5px rgb(88, 237, 237), 0 0 15px rgb(88, 237, 237),
+    0 0 30px rgb(88, 237, 237), 0 0 75px rgb(88, 237, 237);
+}
+.resume_icon{
+    text-decoration: none;
+    color: #080808;
+    background-color: #ff004f;
+    border: 1px solid #fff;
+    padding: 20px;
+    display:inline-flex;
+    width: 180px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.resume_icon:hover{
+    background-color: rgb(88, 237, 237);
+}
+
+
+/*-----------------------------About----------------------------------*/
+#about_section{
+    padding: 20px 0;
+    color: #ababab;
+    height: 80vh;
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap:wrap; */
+}
+.about-col1{
+    flex-basis: 30%;
+    position: relative;
+
+}
+.about-col1 img{
+    width: 320px;
+    border-radius: 15px;
+    background-color: #c7c7c7;
+
+}
+#about-col2{
+    flex-basis: 70%;
+    /* margin-left: 5%; */
+   
+}
+#about-col2 p{
+    font-size: 19px;
+    font-family:'Times New Roman', Times, serif ;
+}
+.sub-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tab-titles{
+    display: flex;
+    margin: 30px 0 40px;
+    position: relative;/* Add this to contain the absolute positioning of the pseudo-element */
+
+}
+.tab-links{
+    margin-right: 60px ;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;/* Add this for the absolute positioning of the ::after pseudo-element */
+}
+.tab-links::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ease; /* Improve transition by specifying the property and adding easing */
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 15px 0;
+
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.tab-contents{
+display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* -----------------Project section--------------------- */
+#projects{
+    padding: 20px 0px;
+
+}
+.sub-title.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.project_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:40px;
+    margin-top: 40px;
+}
+.project_list div{
+    cursor: pointer;
+    background-color: #5cb6c636; 
+    padding: 5px 30px 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+.project_list div:hover{
+    transform:translateY(-10px) ; 
+
+}
+.project_list div a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(53, 149, 251);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.project_list div h5 a{
+    margin-left: 15px;
+    margin-top: -3px;
+}
+.project_list div a:hover{
+    text-decoration: underline;
+    color: #ff004f;
+}
+.budget-zone-website {
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.566)), url("Assets/1.Budgetzone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.library-web{
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.566)), url("Assets/2.Library-web.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;    
+}
+.amazon-home{
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.812), rgba(0, 0, 0, 0.566)), url("Assets/3.Amazon-Homepage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;    
+}
+.calculator-webapp {
+    color: white;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.505)), url("Assets/4.Calculator-web.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.project_list h4{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+}
+.project_list h5{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;    
+}
+.project_list h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: monospace;
+    font-size: 25px;
+    color: #dad6d6eb;
+}
+
+/* -----------------------------------Servvices Section----------------------------------- */
+#services{
+    padding: 20px 35px;
+    
+}
+
+.services_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+}
+.services_list div{
+    cursor: pointer;
+    background: #262626;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 30px 40px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    /* it's for images align center */
+    display: flex;
+    flex-direction: column;/* Aligns items in a column*/
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+}
+.services_list div h3 img{
+    width: 11%;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+.services_list div h3{
+    margin-top: 20px;
+}
+.services_list div h3 span{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    
+}
+
+.services_list div:hover{
+    background-color: #b54769;
+    transform:translateY(-10px) ; 
+
+}
+.services_list h2{
+align-items: center;
+justify-content: center;
+display: flex;
+margin-bottom: 15px;
+font-size: 30px;
+font-weight: 550;
+font-family: 'Times New Roman', Times, serif;
+}
+.services_list div ul li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.more-content{
+    display: none;
+}
+.see-more-btn{
+    background-color: blue;
+    margin-bottom: 20px;
+}
+.whatsapp-icon a img{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 70px;
+    z-index: 1000;
+}
+
+/* ------------------contact------------- */
+
+.contact-top form{
+    margin: 5%;
+    border: 1px solid #fff;
+    border-radius: 10px;    
+    padding:30px 10%;
+    background-image:radial-gradient(rgba(248, 248, 251, 0.255), rgba(16, 13, 13, 0.956));
+}
+.input-name{
+    width: 45%;
+    height: 50px;
+    border-radius: 7px; 
+    margin-right: 10px;
+    padding: 10px;
+}
+.input-no{
+    width: 45%;
+    height: 50px;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+.input-email{
+    width: 92%;
+    height: 50px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.input-message{
+    width: 92%;
+    height: 70px;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+input{
+    background-color: transparent; /* or any color */
+    border: 1px solid #919090;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+textarea{
+    background-color: transparent; /* or any color */
+    border: 1px solid #919090;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    background-color: transparent;
+    border: 2px solid  #ff004f;
+    width: 120px;
+    color: #d5d5d5;
+    height: 50px;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-size: 16px;
+    display: block;
+    margin: 15px auto 0 auto; /* Center the button horizontally */
+    cursor: pointer; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+button:hover{
+    background-color:#b54769;
+    border: 2px solid #919090;
+}
+.contact-bottom{
+text-align: center;
+margin-top: 80px;
+    
+}
+.copy-right{
+    text-align: center;
+}
+.contact-bottom p{
+    margin-bottom: 5px;
+}
+.social-link a{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.contact-link{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.contact-link  a{
+    font-size: 17px;
+    color: #ff004f;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-bottom  a{
+    text-decoration: none;
+    margin-right: 20px;
+    
+}
+.contact-bottom  a:hover{
+    color: rgb(0, 191, 255);
+    text-decoration: underline;
+}
+.copy-right p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+/* ---------------------small screen--------------- */
+.abt-hm{
+    width: 65%;
+}
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+        /*------------ navbar----------- */
+        nav{
+            display: flex;
+            width: 500px;
+            padding: 10px 0px 5px 70px;
+        }
+        nav .fa-solid{
+            display: block;
+            font-size: 27px;
+            margin-top: 10px;
+        }
+        nav ul{
+            background: #919090;
+            display: flex;
+            flex-wrap: wrap;
+            position: fixed;
+            margin-top: 30px;
+            top: 0;
+            right: -200px;
+            width: 150px;
+            height: 350px;
+            border-radius: 10px;
+            padding-top: 50px;
+            transition: right 0.5s;
+            z-index: 1;
+        }
+        nav ul li{
+            display: block;
+            margin: 5px 25px 10px 25px;
+        }
+        nav ul .fa-solid{
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            cursor: pointer;
+        }
+        nav ul .fa-solid:hover{
+            color: red;
+        }
+        /*--------- home ----------*/
+        #header{
+            background-image:url(Assets/mypic3ps.png);
+            background-size: 60%;
+            background-attachment: fixed;
+            height: 140vh;
+         }
+        .home-intro-s{
+            margin-top: -100px;
+        }
+        #home_text{
+            font-size: 18px;
+            margin-top: 230px;
+         }
+        #home_text p{
+            color:cornsilk;
+        }
+         #intro{
+            font-size: 30px;
+         }
+         #name{
+            font-size: 22px;
+         }
+         #profession{
+            font-size: 23px;
+         }
+         #developer-type{
+            font-size: 25px;
+            margin-bottom: 100px;
+         }
+        .abt-hm{
+            font-size: 17px;
+            width: 105%; 
+         }
+         /*----------- About----------- */
+         .row {
+            display: block;
+            }
+        #about-col2{
+            margin-top: 20px;
+            }
+            /*---------- Services----------- */
+         #services{
+            padding: 20px 15px;
+        }
+        #about_section{
+            height: 145vh;
+        }
+        #projects{
+            margin-top: 130px;
+        }
+        .project_list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .more-content{
+            display:contents;
+        }
+        .see-more-btn{
+            display: none;
+        }
+        .whatsapp-icon a img{
+            width: 50px;
+        }
+        
+}
+
+#msg{
+    color: #61b752;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
