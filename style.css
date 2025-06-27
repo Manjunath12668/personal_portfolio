@@ -603,7 +603,7 @@ nav .fa-solid{
     nav{
         display: flex;
         height: 70px;
-        width: 500px;
+        width: 100%;
         padding: 10px 0px 5px 70px;
     }
     nav .fa-solid{
@@ -691,7 +691,7 @@ nav .fa-solid{
      }
      /*----------- About----------- */
     .background-container{
-        width: fit-content;
+        width: 110%;
         background-color: #080808;
      }
      .row {
