@@ -655,16 +655,14 @@ nav .fa-solid{
         position:fixed;
         z-index: -990;
         margin-left: 90px;
-        margin-top: 100px;
+        margin-top: 0px;
         width:78% ;
     }
     .home-intro-s{
-        width: fit-content;
         margin-top: -100px;
         margin-right: -20px;
     }
     #home_text{
-        width: fit-content;
         font-size: 18px;
         margin-top: 230px;
      }
@@ -679,10 +677,10 @@ nav .fa-solid{
      }
      #profession{
         font-size: 23px;
+        width: 120%;
      }
      #developer-type{
         font-size: 25px;
-        width: 120%;
         margin-bottom: 100px;
      }
     .abt-hm{
