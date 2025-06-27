@@ -70,7 +70,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    background-color: red;
+    background-color: #2e2f2f;
     /* height: 100px; */
     width: 100%;
     z-index: 5;
@@ -673,7 +673,7 @@ nav .fa-solid{
             height: 145vh;
         }
         #projects{
-            margin-top: 130px;
+            margin-top: 350px;
         }
         .project_list{
             display: grid;
