@@ -632,7 +632,7 @@ nav .fa-solid{
             background-repeat: no-repeat;
             background-position: right;
             background-attachment: fixed;
-            with:100%;
+            with: fit-content;
             height: 140vh;
          }
         .home-intro-s{
