@@ -627,11 +627,11 @@ nav .fa-solid{
          }
         /*--------- home ----------*/
         #header{
-            background-image:url(Assets/mypic2.png);
+            background-image:url(Assets/mypic3ps.png);
             background-size: 60%;
             background-position: right;
             background-attachment: fixed;
-            with: 100%;
+            with: 120%;
             height: 140vh;
          }
         .home-intro-s{
