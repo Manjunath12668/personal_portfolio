@@ -70,7 +70,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-    background-color: #2e2f2f;
+    background-color: red;
     /* height: 100px; */
     width: 100%;
     z-index: 5;
