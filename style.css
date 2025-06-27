@@ -625,7 +625,8 @@ nav .fa-solid{
         /*--------- home ----------*/
         #header{
             background-image:url(Assets/mypic3ps.png);
-            background-size: 80%;
+            background-size: 60%;
+            with:100%;
             background-attachment: fixed;
             height: 140vh;
          }
