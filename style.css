@@ -602,6 +602,7 @@ nav .fa-solid{
     /*------------ navbar----------- */
     nav{
         display: flex;
+        height: 70px;
         width: 500px;
         padding: 10px 0px 5px 70px;
     }
@@ -688,6 +689,7 @@ nav .fa-solid{
      }
      /*----------- About----------- */
     .background-container{
+        width: fit-content;
         background-color: #080808;
      }
      .row {
