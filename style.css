@@ -634,6 +634,7 @@ nav .fa-solid{
             height: 140vh;
          }
         .home-intro-s{
+            width:100%;
             margin-top: -100px;
         }
         #home_text{
