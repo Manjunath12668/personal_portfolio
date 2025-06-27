@@ -659,7 +659,7 @@ nav .fa-solid{
         width:78% ;
     }
     .home-intro-s{
-        width:100%;
+        width: fit-content;
         margin-top: -100px;
         margin-right: -20px;
     }
