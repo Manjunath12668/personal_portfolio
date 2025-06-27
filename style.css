@@ -687,9 +687,9 @@ nav .fa-solid{
     #about_section{
         height: 145vh;
     }
-/*     #projects{
-        margin-top: 350px;
-    } */
+    #projects{
+        margin-top: 150px;
+    }
     .project_list{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
