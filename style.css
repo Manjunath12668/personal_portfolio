@@ -382,18 +382,18 @@ display: none;
     color: #dad6d6eb;
 }
 
-/* -----------------------------------Servvices Section----------------------------------- */
-#services{
+/* ----------------------------------Key Skills Section----------------------------------- */
+#key-skills{
     padding: 20px 35px;
     
 }
 
-.services_list{
+.keyskills_list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap:40px;
 }
-.services_list div{
+.keyskills_list div{
     cursor: pointer;
     background: #262626;
     margin-top: 40px;
@@ -410,15 +410,15 @@ display: none;
     justify-content: center; /* Centers items vertically */
     align-items: center; /* Centers items horizontally */
 }
-.services_list div h3 img{
+.keyskills_list div h3 img{
     width: 11%;
     margin-top: -10px;
     margin-left: -20px;
 }
-.services_list div h3{
+.keyskills_list div h3{
     margin-top: 20px;
 }
-.services_list div h3 span{
+.keyskills_list div h3 span{
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     margin-top: -30px;
@@ -427,12 +427,12 @@ display: none;
     
 }
 
-.services_list div:hover{
+.keyskills_list div:hover{
     background-color: #b54769;
     transform:translateY(-10px) ; 
 
 }
-.services_list h2{
+.keyskills_list h2{
 align-items: center;
 justify-content: center;
 display: flex;
@@ -441,7 +441,7 @@ font-size: 30px;
 font-weight: 550;
 font-family: 'Times New Roman', Times, serif;
 }
-.services_list div ul li{
+.keyskills_list div ul li{
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     margin-bottom: 7px;
@@ -680,8 +680,8 @@ nav .fa-solid{
         margin-top: 20px;
         margin-bottom:500px;
         }
-        /*---------- Services----------- */
-     #services{
+        /*----------Key Skills----------- */
+     #key-skills{
         padding: 20px 15px;
     }
     #about_section{
@@ -722,7 +722,7 @@ nav .fa-solid{
     .about-col1 img {
         width: 320px;
     }
-    .project_list, .services_list {
+    .project_list, .keyskills_list {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -732,7 +732,7 @@ nav .fa-solid{
     .project_list {
         grid-template-columns: repeat(3, 1fr);
     }
-    .services_list {
+    .keyskills_list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
