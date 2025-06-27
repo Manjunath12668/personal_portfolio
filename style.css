@@ -603,7 +603,7 @@ nav .fa-solid{
     nav{
         display: flex;
         height: 70px;
-        width: 100%;
+        width: 500px;
         padding: 10px 0px 5px 70px;
     }
     nav .fa-solid{
@@ -691,7 +691,8 @@ nav .fa-solid{
      }
      /*----------- About----------- */
     .background-container{
-        width: 110%;
+        width: 105%;
+        padding: 0px 10px;
         background-color: #080808;
      }
      .row {
@@ -699,7 +700,7 @@ nav .fa-solid{
         }
     #about-col2{
         margin-top: 20px;
-        margin-bottom:500px;
+        margin-bottom:400px;
         }
         /*----------Key Skills----------- */
      #key-skills{
@@ -722,7 +723,7 @@ nav .fa-solid{
         display: none;
     }
     .whatsapp-icon a img{
-        width: 50px;
+        width: 80px;
     }        
 }
 
