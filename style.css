@@ -622,6 +622,9 @@ nav .fa-solid{
         nav ul .fa-solid:hover{
             color: red;
         }
+        .fa-bars{
+            margin-left: -40px;
+         }
         /*--------- home ----------*/
         #header{
             background-image:url(Assets/mypic3ps.png);
