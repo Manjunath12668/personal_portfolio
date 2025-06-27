@@ -571,7 +571,15 @@ margin-top: 80px;
     margin-bottom: 20px;
 
 }
-/* ---------------------small screen--------------- */
+#msg{
+    color: #61b752;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* ---------------------small screen themes--------------- */
 .abt-hm{
     width: 65%;
 }
@@ -696,11 +704,161 @@ nav .fa-solid{
         }        
 }
 
-#msg{
-    color: #61b752;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
+/*----------------- Extranal Phones Themes------------  */
+/* 🔸 Extra Small Phones (Vivo Yseries, iPhone SE) */
+@media only screen and (max-width: 400px) {
+    nav {
+        padding: 10px;
+        width: 100%;
+    }
+    nav ul {
+        width: 130px;
+        height: 270px;
+    }
+    .titlename {
+        margin-right: 10px;
+    }
+    #header {
+        background-size: 65%;
+        height: 120vh;
+    }
+    #intro {
+        font-size: 18px;
+    }
+    #name {
+        font-size: 20px;
+    }
+    #profession, #developer-type {
+        font-size: 18px;
+    }
+    .abt-hm {
+        width: 100%;
+        font-size: 12px;
+    }
+    .about-col1 img {
+        width: 200px;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    .project_list, .services_list {
+        grid-template-columns: 1fr;
+    }
+    .whatsapp-icon a img {
+        width: 50px;
+    }
+}
+
+/* 🔸 Small Phones (401px - 480px) */
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+    nav {
+        padding: 10px;
+        width: 100%;
+    }
+    nav ul {
+        width: 140px;
+        height: 280px;
+    }
+    #intro {
+        font-size: 20px;
+    }
+    #name {
+        font-size: 22px;
+    }
+    #profession, #developer-type {
+        font-size: 20px;
+    }
+    .abt-hm {
+        width: 100%;
+        font-size: 13px;
+    }
+    .about-col1 img {
+        width: 220px;
+    }
+    .sub-title {
+        font-size: 26px;
+    }
+    .project_list, .services_list {
+        grid-template-columns: 1fr;
+    }
+    .whatsapp-icon a img {
+        width: 50px;
+    }
+}
+
+/* 🔸 Medium Phones (481px - 600px) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    #name {
+        font-size: 24px;
+    }
+    #profession, #developer-type {
+        font-size: 22px;
+    }
+    .abt-hm {
+        font-size: 15px;
+    }
+    .sub-title {
+        font-size: 28px;
+    }
+    .about-col1 img {
+        width: 260px;
+    }
+    .project_list, .services_list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 🔸 Large Phones/Phablets (601px - 767px) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    #name {
+        font-size: 26px;
+    }
+    #profession, #developer-type {
+        font-size: 24px;
+    }
+    .abt-hm {
+        font-size: 16px;
+    }
+    .sub-title {
+        font-size: 30px;
+    }
+    .about-col1 img {
+        width: 280px;
+    }
+    .project_list, .services_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 🔸 Tablets (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #name {
+        font-size: 30px;
+    }
+    #profession, #developer-type {
+        font-size: 26px;
+    }
+    .abt-hm {
+        font-size: 18px;
+    }
+    .sub-title {
+        font-size: 34px;
+    }
+    .about-col1 img {
+        width: 320px;
+    }
+    .project_list, .services_list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 🔸 Desktop (Above 1024px) */
+@media only screen and (min-width: 1025px) {
+    .project_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
