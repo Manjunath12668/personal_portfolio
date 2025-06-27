@@ -587,28 +587,28 @@ nav .fa-solid{
     display: none;
 }
 
-/* 🔸 Phones and Small Tablets (Portrait) */
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 768px) 
-  and (orientation: portrait) {
+  and (orientation: portrait){
     
-    /* Navbar */
-    nav {
+    /*------------ navbar----------- */
+    nav{
         display: flex;
-        width: 100%;
-        padding: 10px;
+        width: 500px;
+        padding: 10px 0px 5px 70px;
     }
-    nav .fa-solid {
+    nav .fa-solid{
         display: block;
         font-size: 28px;
         margin-top: 10px;
     }
-    nav ul {
+    nav ul{
         background: #919090;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         position: fixed;
+        margin-top: 30px;
         top: 0;
         right: -200px;
         width: 150px;
@@ -618,100 +618,91 @@ nav .fa-solid{
         transition: right 0.5s;
         z-index: 1;
     }
-    nav ul li {
-        margin: 10px 20px;
+    nav ul li{
+        display: block;
+        margin: 5px 25px 10px 25px;
     }
-    nav ul .fa-solid {
+    nav ul .fa-solid{
         position: absolute;
-        top: 10px;
+        top: 0px;
         left: 20px;
         cursor: pointer;
     }
-    nav ul .fa-solid:hover {
+    nav ul .fa-solid:hover{
         color: red;
     }
-    .fa-bars {
+    .fa-bars{
         margin-left: -40px;
-    }
-
-    /* Header */
-    #header {
-        background-image: url(Assets/mypic3ps.png);
+     }
+    /*--------- home ----------*/
+    #header{
+        background-image:url(Assets/mypic3ps.png);
         background-size: 60%;
         background-position: right;
         background-attachment: fixed;
-        width: 100%;
+        with: 100%;
         height: 140vh;
-    }
-    .home-intro-s {
-        width: 100%;
+     }
+    .home-intro-s{
+        width:100%;
         margin-top: -100px;
+        margin-right: -20px;
     }
-    #home_text {
+    #home_text{
         font-size: 18px;
         margin-top: 230px;
+     }
+    #home_text p{
+        color:cornsilk;
     }
-    #home_text p {
-        color: cornsilk;
-    }
-    #intro {
-        font-size: 26px;
-    }
-    #name {
+     #intro{
+        font-size: 30px;
+     }
+     #name{
         font-size: 22px;
-    }
-    #profession {
+     }
+     #profession{
         font-size: 23px;
-    }
-    #developer-type {
+     }
+     #developer-type{
         font-size: 25px;
-    }
-    .abt-hm {
-        font-size: 16px;
-        width: 100%;
-    }
-
-    /* About */
-    .row {
+        margin-bottom: 100px;
+     }
+    .abt-hm{
+        font-size: 17px;
+        width: 105%; 
+     }
+     /*----------- About----------- */
+     .row {
         display: block;
-    }
-    #about-col2 {
+        }
+    #about-col2{
         margin-top: 20px;
-    }
-
-    #about_section {
-        height: auto;
-    }
-
-    /* Services */
-    #services {
+        margin-bottom:500px;
+        }
+        /*---------- Services----------- */
+     #services{
         padding: 20px 15px;
     }
-
-    /* Projects */
-    #projects {
-        margin-top: 300px;
+    #about_section{
+        height: 145vh;
     }
-    .project_list {
-        grid-template-columns: 1fr;
+    #projects{
+        margin-top: 350px;
     }
-
-    /* Skills Section */
-    .services_list {
-        grid-template-columns: 1fr;
+    .project_list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    .more-content {
-        display: contents;
+    .more-content{
+        display:contents;
     }
-    .see-more-btn {
+    .see-more-btn{
         display: none;
     }
-
-    /* WhatsApp Icon */
-    .whatsapp-icon a img {
+    .whatsapp-icon a img{
         width: 50px;
-    }
+    }        
 }
 
 /* 🔸 Tablets (768px - 1024px) */
