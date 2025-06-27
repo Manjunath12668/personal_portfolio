@@ -85,7 +85,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin: 20px 70px 0px 0px;
+    margin-right: 70px;
     list-style: none;
 }
 nav ul li a{
