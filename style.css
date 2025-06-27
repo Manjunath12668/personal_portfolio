@@ -691,7 +691,7 @@ nav .fa-solid{
      }
      /*----------- About----------- */
     .background-container{
-        width: auto;
+        width: max-content;
         background-color: #080808;
      }
      .row {
